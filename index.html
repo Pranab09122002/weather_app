@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wather App</title>
+    <link rel="stylesheet" href="dist/output.css">
+</head>
+<body>
+    <video class="w-full" id="background-video" autoplay muted loop>
+        <source src="background1.mp4" type="video/mp4">
+    </video>
+    <div class="w-96 h-77 absolute lg:ml-75 lg:scroll -mt-115 rounded-3xl bg-gray-500 bg-opacity-70">
+        <div >
+            <input type="text" id="search" class="bg-transparent border-2 border-gray-400 w-64 h-9 mt-4 flex ml-4 rounded-2xl px-8 py-1 text-white" placeholder="Enter your city" spellcheck="true">
+            <button id="btn"><img src="img/search-removebg-preview.png" class="w-9 ml-73 -mt-14 flex"></button>
+        </div>
+        <div>
+            <img src="/img/drizll-removebg-preview.png" class="w-52 ml-24">
+            <h1 id="temp" class="text-white text-3xl mt-4 font-bold ml-40">22°C</h1>
+            <h2 id="city" class="text-white text-3xl mt-2 font-bold ml-108">Kolkata</h2>
+        </div>
+        <div>
+            <img src="img/humi-removebg-preview.png" class="w-16 ml-4 mt-5 flex">
+            <p id="humidity" class="ml-20 -mt-12 text-white font-bold text-xl">50%</p>
+            <p class="ml-5 mt-4">Humidity</p>
+        </div>
+        <div>
+            <img src="img/wind-removebg-preview.png" class="w-16 ml-73 -mt-20 flex">
+            <p id="wind" class="ml-52 flex -mt-12 text-white font-bold text-xl">120km/h</p>
+            <p class="w-16 ml-72 mt-3">WindSpeed</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
